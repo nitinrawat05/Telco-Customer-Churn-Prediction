@@ -60,4 +60,5 @@ Gradio UI error (“No runs found in experiment”)
 Local testing vs. prod paths
 
 - Cause: MLflow artifact URIs differ locally vs. in container.
+
 - Fixes: For local dev, load via direct ./mlruns/.../artifacts/model; in prod, container loads the packaged model path used at build time.
